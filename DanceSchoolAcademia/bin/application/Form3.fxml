@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="338.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Form3Controller">
+   <children>
+      <ImageView fitHeight="338.0" fitWidth="608.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/cute-purple-aesthetic-abstract-minimal-background-perfect-for-wallpaper-backdrop-postcard-background-vector.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblname1" layoutX="68.0" layoutY="94.0" text="Admin Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblpassword1" layoutX="368.0" layoutY="94.0" text="Password:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btngiriş1" layoutX="251.0" layoutY="210.0" mnemonicParsing="false" onAction="#btngiriş1_click" text="Login">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtname1" layoutX="68.0" layoutY="120.0" onAction="#txtname1_click" />
+      <PasswordField fx:id="password1" layoutX="368.0" layoutY="120.0" onAction="#password1_click" />
+      <Label fx:id="lblhata" layoutX="76.0" layoutY="184.0" />
+   </children>
+</AnchorPane>

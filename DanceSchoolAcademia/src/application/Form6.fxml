@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Form6Controller">
+   <children>
+      <SplitPane dividerPositions="0.37568784392196103" layoutY="-7.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-7.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="389.0" prefWidth="216.0">
+               <children>
+                  <ImageView fitHeight="379.0" fitWidth="247.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/fot8.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="32.0" layoutY="33.0" text="Lütfen ders seçimi yapınız:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtteacname" layoutX="13.0" layoutY="215.0" onAction="#txtteacname_click" promptText="Teacher name" />
+                  <TextField fx:id="txtdancetype" layoutX="14.0" layoutY="252.0" onAction="#txtdancetype_click" promptText="Dance Type" />
+                  <TextField fx:id="txtname" layoutX="14.0" layoutY="173.0" onAction="#txtname_click" promptText="Your Name" />
+                  <DatePicker fx:id="datepicker" layoutX="13.0" layoutY="299.0" onAction="#datepicker_click" promptText="Date" />
+                  <TextField fx:id="txtıd" layoutX="13.0" layoutY="128.0" onAction="#txtıd_click" promptText="Your ID" />
+                  <Button fx:id="btnkaydet" layoutX="174.0" layoutY="343.0" mnemonicParsing="false" onAction="#btnkaydet_click" text="Kaydet">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="lblkontrol" layoutX="18.0" layoutY="340.0" />
+                  <Button fx:id="btngüncel" layoutX="93.0" layoutY="344.0" mnemonicParsing="false" onAction="#btngüncel_click" text="Güncelle">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="425.0">
+               <children>
+                  <TableView fx:id="tableview_kayit1" layoutY="8.0" onSort="#tableview_kayit1_click" prefHeight="389.0" prefWidth="436.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-23.0" AnchorPane.topAnchor="8.0">
+                    <columns>
+                      <TableColumn fx:id="colid" prefWidth="99.33330023288727" text="ID" />
+                      <TableColumn fx:id="coluser" prefWidth="132.66667938232422" text="user name" />
+                        <TableColumn fx:id="coldance" prefWidth="82.00004577636719" text="DanceType" />
+                        <TableColumn fx:id="colteacher" prefWidth="95.99993896484375" text="Teacher" />
+                        <TableColumn fx:id="coldate" prefWidth="47.3333740234375" text="Date" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
